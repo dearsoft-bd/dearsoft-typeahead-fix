@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>DearSoft Typeahead Fix</name>
+  <code>dearsoft-typeahead-fix</code>
+  <version>3.6.0</version>
+  <author>DearSoft</author>
+  <link>https://dearsoft.com.bd</link>
+
+  <file path="catalog/view/theme/*/template/common/header.twig">
+    <operation error="skip">
+      <search><![CDATA[</head>]]></search>
+      <add position="before"><![CDATA[
+<script src="catalog/view/javascript/dearsoft/typeahead-fix.js"></script>
+]]></add>
+    </operation>
+  </file>
+</modification>
